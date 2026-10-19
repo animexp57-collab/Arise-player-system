@@ -33,9 +33,6 @@ jobs:
       - name: Accept Android SDK licences
         run: yes | sdkmanager --licenses
 
-      - name: Install Android SDK components
-        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
-
       - name: Build APK
         run: |
           cd project
